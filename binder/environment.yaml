@@ -7,4 +7,6 @@ dependencies:
   - samtools
   - pilon
   - minimap2
+  - sra-tools
+  - canu
   #- blast
