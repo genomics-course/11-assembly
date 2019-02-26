@@ -1,0 +1,10 @@
+name: session-11
+channels:
+  - bioconda
+dependencies:
+  - spades
+  - cutadapt
+  - samtools
+  - pilon
+  - minimap2
+  #- blast
