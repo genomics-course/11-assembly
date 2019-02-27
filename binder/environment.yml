@@ -5,8 +5,11 @@ dependencies:
   - spades
   - cutadapt
   - samtools
-  - pilon
   - minimap2
   - sra-tools
-  - canu
+  - minimap2
+  - miniasm
+  - racon
+  #- canu
+  #- pilon
   #- blast
