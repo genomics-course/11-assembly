@@ -1,15 +1,20 @@
 name: session-11
 channels:
   - bioconda
+  - eaton-lab
 dependencies:
+  - numpy
+  - pandas
+  - toyplot
+  - jellyfish
   - spades
   - cutadapt
   - samtools
-  - minimap2
   - sra-tools
   - minimap2
   - miniasm
   - racon
+
   #- canu
   #- pilon
   #- blast
