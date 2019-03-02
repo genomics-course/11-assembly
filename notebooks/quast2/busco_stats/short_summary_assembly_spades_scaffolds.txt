@@ -1,0 +1,15 @@
+# BUSCO version is: 3.0.2 
+# The lineage dataset is: fungi_odb9 (Creation date: 2016-02-13, number of species: 85, number of BUSCOs: 290)
+# To reproduce this run: python <undefined_entry_point> -i /home/deren/Documents/genomics-course/session-11/notebooks/quast2/quast_corrected_input/assembly_spades_scaffolds.fasta -o assembly_spades_scaffolds -l /home/deren/miniconda3/lib/python3.6/site-packages/quast_libs/busco/fungi/ -m genome -c 5 -t /home/deren/Documents/genomics-course/session-11/notebooks/quast2/busco_stats/tmp/ -sp fly --augustus_parameters ''''
+#
+# Summarized benchmarking in BUSCO notation for file /home/deren/Documents/genomics-course/session-11/notebooks/quast2/quast_corrected_input/assembly_spades_scaffolds.fasta
+# BUSCO was run in mode: genome
+
+	C:94.8%[S:94.5%,D:0.3%],F:2.1%,M:3.1%,n:290
+
+	275	Complete BUSCOs (C)
+	274	Complete and single-copy BUSCOs (S)
+	1	Complete and duplicated BUSCOs (D)
+	6	Fragmented BUSCOs (F)
+	9	Missing BUSCOs (M)
+	290	Total BUSCO groups searched
