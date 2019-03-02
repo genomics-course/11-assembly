@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>canu analysis for assembly 'test' in directory '/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming'</title>
+<style type='text/css'>
+body       { font-family: Helvetica, Verdana, sans-serif; }
+h1, h2, h3 { color: #ee3e80; }
+p          { color: #665544; }
+th, td     { border: 1px solid #111111; padding: 2px 2px 2px 2px; }
+td:hover   { background-color: #e4e4e4; }
+th:hover   { background-color: #d4d4d4; }
+tr.details { visibility: collapse; }
+</style>
+</head>
+
+<body>
+
+<h1>Trimming</h1>
+<h2>Input Reads</h2>
+
+<table>
+<tr id='gkpload0'><td colspan='2'>/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/test.correctedReads.fasta.gz</td></tr>
+<tr class='details'><td rowspan='8'>Parameters</td><td>preset = N/A</td></tr>
+<tr class='details'><td>defaultQV = 20</td></tr>
+<tr class='details'><td>isNonRandom = false</td></tr>
+<tr class='details'><td>removeDuplicateReads = true</td></tr>
+<tr class='details'><td>finalTrim = true</td></tr>
+<tr class='details'><td>removeSpurReads = true</td></tr>
+<tr class='details'><td>removeChimericReads = true</td></tr>
+<tr class='details'><td>checkForSubReads = true</td></tr>
+<tr class='details'><td rowspan='2'>FASTA</td><td>111026 reads (733149269 bp)</td></tr>
+<tr class='details'><td>0 reads (0 bp) were short and not loaded</td></tr>
+<tr class='details'><td rowspan='2'>FASTQ</td><td>0 reads (0 bp)</td></tr>
+<tr class='details'><td>0 reads (0 bp) were short and not loaded</td></tr>
+<tr><td colspan='2'>111026 reads (733149269 bp) loaded, 0 reads (0 bp) skipped, 0 warnings</td></tr>
+</table>
+
+<h2>Final Store</h2>
+
+<table>
+<tr><td colspan='2'>/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming/test.gkpStore</td></tr>
+<tr><td>readsLoaded</td><td>111026 reads (733149269 bp)</td></tr>
+<tr><td>readsSkipped</td><td>0 reads (0 bp) (read was too short)</td></tr>
+<tr><td>warnings</td><td>0 warnings (invalid base or quality value)</td></tr>
+</table>
+<h3>Read Length Histogram</h3>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/readlengths.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/readlengths.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<h2>k-Mer Counts</h2>
+
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.ms22.histogram.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.ms22.histogram.sm.png'></a>
+<figcaption>
+Histogram for k=22 with 730817723 mers, 44235088 distinct mers and 19506849 single-copy mers.  Largest count is 8172.
+</figcaption>
+</figure>
+<h2>Overlaps</h2>
+
+<p>No statistics available for store '/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming/test.ovlStore'.</p>
+<h2>Trimming</h2>
+
+<table>
+<tr><th colspan='2'>PARAMETERS</th></tr>
+<tr><td>1000</td><td>reads trimmed below this many bases are deleted</td></tr>
+<tr><td>0.0450</td><td>use overlaps at or below this fraction error</td></tr>
+<tr><td>1</td><td>break region if overlap is less than this long, for 'largest covered' algorithm</td></tr>
+<tr><td>1</td><td>break region if overlap coverage is less than this many read, for 'largest covered' algorithm</td></tr>
+</table>
+<table>
+<tr><th colspan='3'>INPUT READS</th></tr>
+<tr><th>reads</th><th>bases</th><th></th></tr>
+<tr><td>111026</td><td>733149269</td><td>reads processed</td></tr>
+<tr><td>0</td><td>0</td><td>reads not processed, previously deleted</td></tr>
+<tr><td>0</td><td>0</td><td>reads not processed, in a library where trimming isn't allowed</td></tr>
+<tr><th colspan='3'>OUTPUT READS</th></tr>
+<tr><th>reads</th><th>bases</th><th></th></tr>
+<tr><td>32569</td><td>216260832</td><td>trimmed reads output</td></tr>
+<tr><td>78217</td><td>514913393</td><td>reads with no change, kept as is</td></tr>
+<tr><td>65</td><td>240399</td><td>reads with no overlaps, deleted</td></tr>
+<tr><td>175</td><td>243896</td><td>reads with short trimmed length, deleted</td></tr>
+<tr><th colspan='3'>TRIMMING DETAILS</th></tr>
+<tr><th>reads</th><th>bases</th><th></th></tr>
+<tr><td>17774</td><td>886657</td><td>bases trimmed from the 5' end of a read</td></tr>
+<tr><td>18012</td><td>604092</td><td>bases trimmed from the 3' end of a read</td></tr>
+</table>
+<p>Image '/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming/3-overlapbasedtrimming/test.1.trimReads.inputDeletedReads' is empty.  Probably no data to display.</p>
+<p>Image '/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming/3-overlapbasedtrimming/test.1.trimReads.inputNoTrimReads' is empty.  Probably no data to display.</p>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.inputReads.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.inputReads.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.outputDeletedReads.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.outputDeletedReads.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.outputNoOvlReads.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.outputNoOvlReads.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.outputTrimmedReads.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.outputTrimmedReads.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.outputUnchangedReads.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.outputUnchangedReads.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.trim3.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.trim3.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.trim5.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/trimming.html.files/test.1.trimReads.trim5.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<h2>Splitting</h2>
+
+<table>
+<tr><th colspan='2'>PARAMETERS</th></tr>
+<tr><td>1000</td><td>reads trimmed below this many bases are deleted</td></tr>
+<tr><td>0.0450</td><td>use overlaps at or below this fraction error</td></tr>
+</table>
+<table>
+<tr><th colspan='3'>INPUT READS</th></tr>
+<tr><th>reads</th><th>bases</th><th></th></tr>
+<tr><td>110786</td><td>732664974</td><td>reads processed</td></tr>
+<tr><td>240</td><td>484295</td><td>reads not processed, previously deleted</td></tr>
+<tr><td>0</td><td>0</td><td>reads not processed, in a library where trimming isn't allowed</td></tr>
+<tr><th colspan='3'>PROCESSED</th></tr>
+<tr><th>reads</th><th>bases</th><th></th></tr>
+<tr><td>0</td><td>0</td><td>no overlaps</td></tr>
+<tr><td>0</td><td>0</td><td>no coverage after adjusting for trimming done already</td></tr>
+<tr><td>0</td><td>0</td><td>processed for chimera</td></tr>
+<tr><td>0</td><td>0</td><td>processed for spur</td></tr>
+<tr><td>110786</td><td>732664974</td><td>processed for subreads</td></tr>
+<tr><th colspan='3'>READS WITH SIGNALS</th></tr>
+<tr><th>reads</th><th>signals</th><th></th></tr>
+<tr><td>0</td><td>0</td><td>number of 5' spur signal</td></tr>
+<tr><td>0</td><td>0</td><td>number of 3' spur signal</td></tr>
+<tr><td>0</td><td>0</td><td>number of chimera signal</td></tr>
+<tr><td>55</td><td>56</td><td>number of subread signal</td></tr>
+<tr><th colspan='3'>SIGNALS</th></tr>
+<tr><th>reads</th><th>bases</th><th></th></tr>
+<tr><td>0</td><td>0</td><td>size of 5' spur signal</td></tr>
+<tr><td>0</td><td>0</td><td>size of 3' spur signal</td></tr>
+<tr><td>0</td><td>0</td><td>size of chimera signal</td></tr>
+<tr><td>56</td><td>21734</td><td>size of subread signal</td></tr>
+<tr><th colspan='3'>TRIMMING</th></tr>
+<tr><th>reads</th><th>bases</th><th></th></tr>
+<tr><td>30</td><td>101122</td><td>trimmed from the 5' end of the read</td></tr>
+<tr><td>25</td><td>120051</td><td>trimmed from the 3' end of the read</td></tr>
+</table>
+
+<script type='text/javascript'>
+var toggleTable = function() {
+  var table = this.closest('table');
+  var elts  = table.querySelectorAll('.details');
+
+  for (var i=0; i<elts.length; i++) {
+    if (!elts[i].enabled) {
+      elts[i].enabled = true;
+      elts[i].style.visibility = 'visible';
+    } else {
+      elts[i].enabled = false;
+      elts[i].style.visibility = 'collapse';
+    }
+  }
+}
+document.getElementById('gkpload0').onclick = toggleTable;
+document.getElementById('gkpload0').style   = 'cursor: pointer;';
+</script>
+
+</body>
+
+</html>

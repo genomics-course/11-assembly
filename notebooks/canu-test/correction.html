@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>canu analysis for assembly 'test' in directory '/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction'</title>
+<style type='text/css'>
+body       { font-family: Helvetica, Verdana, sans-serif; }
+h1, h2, h3 { color: #ee3e80; }
+p          { color: #665544; }
+th, td     { border: 1px solid #111111; padding: 2px 2px 2px 2px; }
+td:hover   { background-color: #e4e4e4; }
+th:hover   { background-color: #d4d4d4; }
+tr.details { visibility: collapse; }
+</style>
+</head>
+
+<body>
+
+<h1>Correction</h1>
+<h2>Input Reads</h2>
+
+<table>
+<tr id='gkpload0'><td colspan='2'>/home/deren/Documents/genomics-course/session-11/notebooks/SRR7825134.fastq</td></tr>
+<tr class='details'><td rowspan='8'>Parameters</td><td>preset = N/A</td></tr>
+<tr class='details'><td>defaultQV = 20</td></tr>
+<tr class='details'><td>isNonRandom = false</td></tr>
+<tr class='details'><td>removeDuplicateReads = true</td></tr>
+<tr class='details'><td>finalTrim = true</td></tr>
+<tr class='details'><td>removeSpurReads = true</td></tr>
+<tr class='details'><td>removeChimericReads = true</td></tr>
+<tr class='details'><td>checkForSubReads = true</td></tr>
+<tr class='details'><td rowspan='2'>FASTA</td><td>0 reads (0 bp)</td></tr>
+<tr class='details'><td>0 reads (0 bp) were short and not loaded</td></tr>
+<tr class='details'><td rowspan='2'>FASTQ</td><td>150698 reads (1207560924 bp)</td></tr>
+<tr class='details'><td>10848 reads (6648364 bp) were short and not loaded</td></tr>
+<tr><td colspan='2'>150698 reads (1207560924 bp) loaded, 10848 reads (6648364 bp) skipped, 0 warnings</td></tr>
+</table>
+
+<h2>Final Store</h2>
+
+<table>
+<tr><td colspan='2'>/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction/test.gkpStore</td></tr>
+<tr><td>readsLoaded</td><td>150698 reads (1207560924 bp)</td></tr>
+<tr><td>readsSkipped</td><td>10848 reads (6648364 bp) (read was too short)</td></tr>
+<tr><td>warnings</td><td>0 warnings (invalid base or quality value)</td></tr>
+</table>
+<h3>Read Length Histogram</h3>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/readlengths.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/readlengths.sm.png'></a>
+<figcaption>
+
+</figcaption>
+</figure>
+<h2>k-Mer Counts</h2>
+
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.ms16.histogram.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.ms16.histogram.sm.png'></a>
+<figcaption>
+Histogram for k=16 with 1205300454 mers, 594613898 distinct mers and 387494075 single-copy mers.  Largest count is 242582.
+</figcaption>
+</figure>
+<h2>Overlaps</h2>
+
+<p>No statistics available for store '/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction/test.ovlStore'.</p>
+<h2>Overlap Filtering</h2>
+
+<table>
+<tr><th colspan='3'>PARAMETERS</th></tr>
+<tr><td rowspan='4'></td><td>40</td><td>expected coverage</td></tr>
+<tr><td>0</td><td>don't use overlaps shorter than this</td></tr>
+<tr><td>0.000</td><td>don't use overlaps with erate less than this</td></tr>
+<tr><td>1.000</td><td>don't use overlaps with erate more than this</td></tr>
+<tr><th colspan='3'>OVERLAPS</th></tr>
+<tr><td rowspan='4'>Ignored</td><td>0</td><td>< 0.0000 fraction error</td></tr>
+<tr><td>0</td><td>> 0.4095 fraction error</td></tr>
+<tr><td>0</td><td>< 0 bases long</td></tr>
+<tr><td>0</td><td>> 2097151 bases long</td></tr>
+<tr><td rowspan='1'>Filtered</td><td>42953458</td><td>too many overlaps, discard these shortest ones</td></tr>
+<tr><td rowspan='1'>Evidence</td><td>4524646</td><td>longest overlaps</td></tr>
+<tr><td rowspan='1'>Total</td><td>47478104</td><td>all overlaps</td></tr>
+<tr><th colspan='3'>READS</th></tr>
+<tr><td rowspan='6'></td><td>6356</td><td>no overlaps</td></tr>
+<tr><td>61556</td><td>no overlaps filtered</td></tr>
+<tr><td>28802</td><td><  50% overlaps filtered</td></tr>
+<tr><td>42400</td><td><  80% overlaps filtered</td></tr>
+<tr><td>62251</td><td><  95% overlaps filtered</td></tr>
+<tr><td>82786</td><td>< 100% overlaps filtered</td></tr>
+</table>
+<h2>Read Correction</h2>
+
+<p>Filter method: corFilter=expensive.  Expect to correct 144342 reads with bp to bp.</p>
+<table>
+<tr><th colspan='3'>INPUTS</th></tr>
+<tr><td>144342</td><td>input reads</td></tr>
+<tr><td>1164481303</td><td>input bases</td></tr>
+<tr><th colspan='3'>OUTPUTS</th></tr>
+<tr><td>43717</td><td>reads that failed to generate any corrected bases</td></tr>
+<tr><td>111026</td><td>corrected read pieces</td></tr>
+<tr><td>733149269</td><td>corrected bases</td></tr>
+<tr><th colspan='3'>PIECES PER READ</th></tr>
+<tr><td>0</td><td>43717</td></tr>
+<tr><td>1</td><td>90893</td></tr>
+<tr><td>2</td><td>9095</td></tr>
+<tr><td>3</td><td>605</td></tr>
+<tr><td>4</td><td>32</td></tr>
+</table>
+<p>A single input read can be split into multiple output reads, or possibly not even output at all.</p>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.estimate.original-x-corrected.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.estimate.original-x-corrected.sm.png'></a>
+<figcaption>
+Scatter plot of the original read length (X axis) against the expected corrected read length (Y axis).
+Colors show a comparison of the simple filter (which doesn't use overlaps) to the expensive filter (which does).
+A large green triangle (false negatives) hints that there could be abnormally low quality regions in the reads.
+
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.originalLength-vs-expectedLength.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.originalLength-vs-expectedLength.sm.png'></a>
+<figcaption>
+Scatter plot of original vs expected read length.  Shown in filter plot above.
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.originalLength-vs-correctedLength.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.originalLength-vs-correctedLength.sm.png'></a>
+<figcaption>
+Scatter plot of original vs corrected read length.
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.expectedLength-vs-correctedLength.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.expectedLength-vs-correctedLength.sm.png'></a>
+<figcaption>
+Scatter plot of expected vs corrected read length.
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.length-difference-histograms.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.length-difference-histograms.sm.png'></a>
+<figcaption>
+Histogram of the difference between the expected and corrected read lengths.
+Note that a negative difference means the corrected read is larger than expected.
+
+</figcaption>
+</figure>
+<figure>
+<a href='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.length-histograms.lg.png'><img src='/home/deren/Documents/genomics-course/session-11/notebooks/canu-test/correction.html.files/test.length-histograms.sm.png'></a>
+<figcaption>
+Histogram of original (red), expected (green) and actual corrected (blue) read lengths.
+
+</figcaption>
+</figure>
+
+<script type='text/javascript'>
+var toggleTable = function() {
+  var table = this.closest('table');
+  var elts  = table.querySelectorAll('.details');
+
+  for (var i=0; i<elts.length; i++) {
+    if (!elts[i].enabled) {
+      elts[i].enabled = true;
+      elts[i].style.visibility = 'visible';
+    } else {
+      elts[i].enabled = false;
+      elts[i].style.visibility = 'collapse';
+    }
+  }
+}
+document.getElementById('gkpload0').onclick = toggleTable;
+document.getElementById('gkpload0').style   = 'cursor: pointer;';
+</script>
+
+</body>
+
+</html>
