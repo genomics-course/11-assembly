@@ -14,6 +14,7 @@ dependencies:
   - minimap2
   - miniasm
   - racon
+  - bandage
 
   #- canu
   #- pilon
